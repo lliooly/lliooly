@@ -24,6 +24,11 @@
   
   <br/>
   
+  <img src="https://streak-stats.demolab.com/?user=lliooly&theme=tokyonight&hide_border=true" />
+</div>
+
+<br/>
+  
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lliooly&theme=tokyonight&hide_border=true" />
 </div>
 
