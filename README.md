@@ -58,6 +58,16 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=lliooly&theme=github-compact&hide_border=true&area=true&custom_title=lliooly%20%E7%9A%84%20GitHub%20%E6%B4%BB%E5%8A%A8%E5%9B%BE" alt="activity graph" />
 </p>
 
+## 贡献动效
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lliooly/lliooly/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lliooly/lliooly/output/github-snake.svg" />
+    <img alt="github contribution snake" src="https://raw.githubusercontent.com/lliooly/lliooly/output/github-snake.svg" />
+  </picture>
+</p>
+
 ## 联系方式
 
 - GitHub: [github.com/lliooly](https://github.com/lliooly)
