@@ -14,70 +14,26 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    env:
-      GITHUB_USERNAME: lliooly
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download stats cards
+      - name: Validate summary token
         run: |
-          set -euo pipefail
-
-          mkdir -p dist
-
-          download_card() {
-            local url="$1"
-            local output="$2"
-            local attempt
-            local max_attempts=5
-            local tmp_file
-
-            tmp_file="$(mktemp)"
-
-            for attempt in $(seq 1 "${max_attempts}"); do
-              echo "Downloading ${output} (attempt ${attempt}/${max_attempts})"
-
-              if curl --fail --location --silent --show-error \
-                --connect-timeout 15 \
-                --max-time 60 \
-                --header "User-Agent: lliooly-profile-stats" \
-                "${url}" \
-                --output "${tmp_file}"; then
-                mv "${tmp_file}" "${output}"
-                return 0
-              fi
-
-              if [ "${attempt}" -lt "${max_attempts}" ]; then
-                sleep $((attempt * 5))
-              fi
-            done
-
-            rm -f "${tmp_file}"
-            echo "Failed to download ${output} after ${max_attempts} attempts" >&2
-            return 1
-          }
-
-          download_card \
-            "https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&count_private=true&hide_border=true&theme=default&locale=zh-CN" \
-            dist/stats-light.svg
-
-          download_card \
-            "https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&count_private=true&hide_border=true&theme=github_dark&locale=zh-CN" \
-            dist/stats-dark.svg
-
-          download_card \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&layout=compact&hide_border=true&langs_count=8&theme=default&locale=zh-CN" \
-            dist/top-langs-light.svg
-
-          download_card \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&layout=compact&hide_border=true&langs_count=8&theme=github_dark&locale=zh-CN" \
-            dist/top-langs-dark.svg
-
-      - name: Publish to stats-output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: stats-output
-          build_dir: dist
+          if [ -z "${SUMMARY_GITHUB_TOKEN}" ]; then
+            echo "::error::Missing repository secret SUMMARY_GITHUB_TOKEN."
+            echo "::error::Create a Personal Access Token and save it as SUMMARY_GITHUB_TOKEN in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY_GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+
+      - name: Generate and publish summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: lliooly
+          BRANCH_NAME: stats-output
+          UTC_OFFSET: 8
+          AUTO_PUSH: true
