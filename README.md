@@ -50,6 +50,38 @@
 
 ## GitHub 统计
 
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/stats-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/stats-light.svg"
+    />
+    <img
+      alt="lliooly GitHub Stats"
+      src="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/stats-light.svg"
+      height="195"
+    />
+  </picture>&nbsp;&nbsp;&nbsp;&nbsp;<picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/top-langs-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/top-langs-light.svg"
+    />
+    <img
+      alt="lliooly Top Languages"
+      src="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/top-langs-light.svg"
+      height="195"
+    />
+  </picture>
+</p>
+
 <p>
   <img src="https://streak-stats.demolab.com?user=lliooly&theme=transparent&locale=zh_Hans" alt="streak" />
 </p>
