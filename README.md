@@ -82,7 +82,7 @@
   </picture>
 </p>
 
-<p>
+<p align="center">
   <img src="https://streak-stats.demolab.com?user=lliooly&theme=transparent&locale=zh_Hans" alt="streak" />
 </p>
 
