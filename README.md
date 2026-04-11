@@ -54,29 +54,29 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/profile-summary-card-output/github_dark/3-stats.svg"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/main/profile-summary-card-output/github_dark/3-stats.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/profile-summary-card-output/default/3-stats.svg"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/main/profile-summary-card-output/default/3-stats.svg"
     />
     <img
       alt="lliooly GitHub Stats"
-      src="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/profile-summary-card-output/default/3-stats.svg"
+      src="https://raw.githubusercontent.com/lliooly/lliooly/main/profile-summary-card-output/default/3-stats.svg"
       height="195"
     />
   </picture>&nbsp;&nbsp;&nbsp;&nbsp;<picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/profile-summary-card-output/github_dark/1-repos-per-language.svg"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/main/profile-summary-card-output/github_dark/1-repos-per-language.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/profile-summary-card-output/default/1-repos-per-language.svg"
+      srcset="https://raw.githubusercontent.com/lliooly/lliooly/main/profile-summary-card-output/default/1-repos-per-language.svg"
     />
     <img
       alt="lliooly Top Languages"
-      src="https://raw.githubusercontent.com/lliooly/lliooly/stats-output/profile-summary-card-output/default/1-repos-per-language.svg"
+      src="https://raw.githubusercontent.com/lliooly/lliooly/main/profile-summary-card-output/default/1-repos-per-language.svg"
       height="195"
     />
   </picture>
