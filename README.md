@@ -15,8 +15,8 @@
   <a href="https://github.com/lliooly?tab=repositories">
     <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=github&label=%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Flliooly&color=2ea44f" alt="repos" />
   </a>
-  <a href="https://shishishi3.com">
-    <img src="https://img.shields.io/badge/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-shishishi3.com-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="blog" />
+  <a href="https://blog.shishishi3.com">
+    <img src="https://img.shields.io/badge/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-blog.shishishi3.com-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="blog" />
   </a>
 </p>
 
