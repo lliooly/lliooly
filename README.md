@@ -168,25 +168,6 @@
 
 ---
 
-## 🔗 联系方式
-
-<p align="center">
-  <a href="https://github.com/lliooly">
-    <img
-      src="https://img.shields.io/badge/GitHub-lliooly-181717?style=for-the-badge&logo=github&logoColor=white"
-      alt="GitHub"
-    />
-  </a>
-  <a href="https://blog.shishishi3.com">
-    <img
-      src="https://img.shields.io/badge/Blog-shishishi3.com-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white"
-      alt="Blog"
-    />
-  </a>
-</p>
-
----
-
 <p align="center">
   持续构建，持续迭代。
   <br />
