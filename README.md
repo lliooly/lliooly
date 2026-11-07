@@ -24,7 +24,7 @@
   </a>
   <a href="https://blog.shishishi.cc">
     <img
-      src="https://img.shields.io/badge/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-blog.shishishi3.com-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white"
+      src="https://img.shields.io/badge/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-blog.shishishi.cc-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white"
       alt="Personal Blog"
     />
   </a>
